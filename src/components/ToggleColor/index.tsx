@@ -10,7 +10,6 @@ export const ToggleColor = () => {
       aria-label={useColorModeValue("Modo oscuro", "Modo claro")}
       icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
       size={"sm"}
-      ml={"0.5rem"}
     />
   );
 };
