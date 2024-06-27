@@ -34,7 +34,7 @@ export const Education = () => {
         gap="0.75rem"
       >
         {education.map((item) => (
-          <EducationItem item={item} />
+          <EducationItem key={`${item.place}-${item.career}`} item={item} />
         ))}
       </Box>
     </Box>

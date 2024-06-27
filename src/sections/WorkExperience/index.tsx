@@ -37,7 +37,7 @@ export const WorkExperience = () => {
         gap="0.75rem"
       >
         {experience.map((item) => (
-          <WorkItem item={item} />
+          <WorkItem key={`${item.company}-${item.role}`} item={item} />
         ))}
       </Box>
     </Box>
