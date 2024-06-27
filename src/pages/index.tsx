@@ -12,10 +12,9 @@ const MainPage: NextPage = () => {
   return (
     <Container
       maxW="2xl"
-      h="calc(100vh)"
-      paddingX={"0"}
-      paddingY={"4rem"}
-      paddingBottom={"1rem"}
+      minH="calc(100vh)"
+      paddingX={{ base: "1rem", md: "0", lg: "0" }}
+      paddingY={{ base: "1rem", md: "4rem", lg: "4rem" }}
     >
       <Head>
         <title>Juanse Calviño | Portfolio</title>

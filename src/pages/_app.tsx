@@ -7,12 +7,6 @@ import theme from "theme";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <style jsx global>{`
-        :root {
-          --inter-font: ${theme.fonts.inter};
-          --jetbrains-mono-font: ${theme.fonts.jetBrainsMono};
-        }
-      `}</style>
       <Component {...pageProps} />
     </ChakraProvider>
   );
