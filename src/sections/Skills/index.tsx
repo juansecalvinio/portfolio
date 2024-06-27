@@ -4,7 +4,7 @@ import React from "react";
 export const Skills = () => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
-      <Heading size={"md"}>Skills</Heading>
+      <Heading fontSize={"24px"}>Skills</Heading>
       <Box display={"flex"} gap={"0.5rem"} marginTop={"1rem"}>
         <Tag>TypeScript</Tag>
         <Tag>React</Tag>

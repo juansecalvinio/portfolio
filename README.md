@@ -1,9 +1,11 @@
 ## TO-DO
 
-- [x] Completar Header
-- [x] Completar Skills
-- [ ] Completar About
-- [ ] Completar Work Experience
-- [ ] Completar Education
-- [ ] Completar Projects
-- [ ] Utilizar fonts de Google
+- [x] Complete Header
+- [x] Complete Skills
+- [x] Complete About
+- [x] Complete Work Experience
+- [x] Complete Education
+- [ ] Complete Projects
+- [x] Add styles to mobile first
+- [ ] Add fonts from Google
+- [ ] Add print feature

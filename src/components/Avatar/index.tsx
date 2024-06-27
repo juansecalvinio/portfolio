@@ -5,7 +5,7 @@ export const Avatar = () => {
   return (
     <WrapItem>
       <ChakraAvatar
-        size="2xl"
+        size={{ base: "xl", md: "2xl", lg: "2xl" }}
         name="Juanse Calviño"
         src="https://avatars.githubusercontent.com/u/26818515?v=4"
       />
