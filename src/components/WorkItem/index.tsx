@@ -20,12 +20,14 @@ export const WorkItem = ({ item }: Props) => {
       flexDirection={{ base: "column", md: "row", lg: "row" }}
       alignItems={"flex-start"}
       justifyContent={"space-between"}
+      gap={"0.25rem"}
     >
       <Box
         display={"flex"}
         flexDirection={"column"}
         alignItems={"flex-start"}
         gap={"0.25rem"}
+        maxW={"500px"}
       >
         <Box
           display={"flex"}
@@ -39,10 +41,15 @@ export const WorkItem = ({ item }: Props) => {
           <Tag>{item.role}</Tag>
         </Box>
 
-        <Text fontSize={"sm"}>{item.description}</Text>
+        <Text fontSize={"sm"} flexWrap={"wrap"}>
+          {item.description}
+        </Text>
       </Box>
       <Box>
-        <Text fontSize={"sm"}>{`${item.startTime} - ${item.endTime}`}</Text>
+        <Text
+          fontSize={"sm"}
+          fontWeight={"600"}
+        >{`${item.startTime} - ${item.endTime}`}</Text>
       </Box>
     </Box>
   );

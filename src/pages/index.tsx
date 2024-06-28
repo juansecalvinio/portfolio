@@ -13,8 +13,8 @@ const MainPage: NextPage = () => {
     <Container
       maxW="2xl"
       minH="calc(100vh)"
-      paddingX={{ base: "1rem", md: "0", lg: "0" }}
-      paddingY={{ base: "1rem", md: "4rem", lg: "4rem" }}
+      paddingX={{ base: "1.75rem", md: "0", lg: "0" }}
+      paddingY={{ base: "1.75rem", md: "4rem", lg: "4rem" }}
     >
       <Head>
         <title>Juanse Calviño | Portfolio</title>
@@ -28,7 +28,6 @@ const MainPage: NextPage = () => {
         <WorkExperience />
         <Education />
         <Skills />
-        <Projects />
       </Box>
     </Container>
   );

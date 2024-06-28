@@ -6,8 +6,10 @@ export const Avatar = () => {
     <WrapItem>
       <ChakraAvatar
         size={{ base: "xl", md: "2xl", lg: "2xl" }}
+        maxW={"150px"}
         name="Juanse Calviño"
-        src="https://avatars.githubusercontent.com/u/26818515?v=4"
+        src="https://media.licdn.com/dms/image/D4D03AQE77cwoXQfEQA/profile-displayphoto-shrink_800_800/0/1711400140726?e=1724889600&v=beta&t=qmE-TbS_QTYOwraCq-tNpcolK5QTVUG3ELQ-ahEeCxY"
+        // src="https://avatars.githubusercontent.com/u/26818515?v=4"
       />
     </WrapItem>
   );

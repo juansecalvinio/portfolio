@@ -6,21 +6,23 @@ const experience: WorkItemProps[] = [
   {
     company: "Santander Tecnología",
     role: "Software Engineer",
-    description: "Construyendo la mejor plataforma de inversiones.",
+    description: "Construyendo la mejor plataforma tus inversiones.",
     startTime: "2020",
     endTime: "Present",
   },
   {
     company: "Montagne Outdoors SA",
     role: "Web Developer",
-    description: "PHP e-commerce",
+    description:
+      "Colaboré en la mejora del sitio e-commerce, adopción de API de Mercado Pago para poder comprar con tarjetas. Trabajé con stack PHP, mySQL y Javascript",
     startTime: "2019",
     endTime: "2020",
   },
   {
     company: "Instituto Médico Alexander Fleming",
     role: "Full Stack Developer",
-    description: "Proyectos web con React y NodeJS. SQL Queries.",
+    description:
+      "Modernización de aplicaciones legacy con nuevas tecnologías como React y NodeJS. Desarrollo de queries SQL, jobs y reportes de QlikView",
     startTime: "2017",
     endTime: "2019",
   },
