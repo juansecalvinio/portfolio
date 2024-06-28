@@ -3,6 +3,7 @@ import { Box, Icon, IconButton, Link } from "@chakra-ui/react";
 import { CiMail } from "react-icons/ci";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { ToggleColor } from "components/ToggleColor";
+import { PrintButton } from "components/PrintButton";
 
 const links = [
   {
@@ -42,6 +43,8 @@ export const ActionLinks = () => {
           />
         </Link>
       ))}
+
+      <PrintButton />
     </Box>
   );
 };

@@ -19,6 +19,7 @@ export const EducationItem = ({ item }: Props) => {
       flexDirection={{ base: "column", md: "row", lg: "row" }}
       alignItems={"flex-start"}
       justifyContent={"space-between"}
+      gap={"0.25rem"}
     >
       <Box
         display={"flex"}
@@ -32,7 +33,10 @@ export const EducationItem = ({ item }: Props) => {
         <Text fontSize={"sm"}>{item.career}</Text>
       </Box>
       <Box>
-        <Text fontSize={"sm"}>{`${item.startTime} - ${item.endTime}`}</Text>
+        <Text
+          fontSize={"sm"}
+          fontWeight={"600"}
+        >{`${item.startTime} - ${item.endTime}`}</Text>
       </Box>
     </Box>
   );
