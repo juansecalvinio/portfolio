@@ -26,7 +26,7 @@ const education: EducationItemProps[] = [
 export const Education = () => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
-      <Heading fontSize={"24px"}>Education</Heading>
+      <Heading size={{ base: "md", md: "lg", lg: "lg" }}>Education</Heading>
       <Box
         marginTop={"1.25rem"}
         display={"flex"}
