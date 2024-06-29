@@ -4,7 +4,7 @@ import { Box, Heading } from "@chakra-ui/react";
 export const Projects = () => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
-      <Heading fontSize={"24px"}>Projects</Heading>
+      <Heading size={{ base: "md", md: "lg", lg: "lg" }}>Projects</Heading>
       <Box></Box>
     </Box>
   );

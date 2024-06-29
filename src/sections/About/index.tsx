@@ -4,9 +4,9 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 export const About = () => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
-      <Heading fontSize={"24px"}>About</Heading>
+      <Heading size={{ base: "md", md: "lg", lg: "lg" }}>About</Heading>
       <Box marginTop={"1rem"}>
-        <Text>
+        <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
           Mi motivación en la tecnología va más allá del código, me atrae la
           posibilidad de impactar a través del desarrollo. Estoy constantemente
           buscando aprender y evolucionar, manteniéndome al día con las últimas

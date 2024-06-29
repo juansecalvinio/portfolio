@@ -6,15 +6,16 @@ const experience: WorkItemProps[] = [
   {
     company: "Santander Tecnología",
     role: "Software Engineer",
-    description: "Construyendo la mejor plataforma tus inversiones.",
+    description:
+      "Hoy en día estamos construyendo la mejor plataforma para tus inversiones.",
     startTime: "2020",
     endTime: "Present",
   },
   {
-    company: "Montagne Outdoors SA",
+    company: "Montagne Outdoors",
     role: "Web Developer",
     description:
-      "Colaboré en la mejora del sitio e-commerce, adopción de API de Mercado Pago para poder comprar con tarjetas. Trabajé con stack PHP, mySQL y Javascript",
+      "Colaboré en la mejora del ecommerce, adopción de API de Mercado Pago para poder comprar con tarjetas. Trabajé con stack PHP, SQL y Javascript",
     startTime: "2019",
     endTime: "2020",
   },
@@ -22,7 +23,7 @@ const experience: WorkItemProps[] = [
     company: "Instituto Médico Alexander Fleming",
     role: "Full Stack Developer",
     description:
-      "Modernización de aplicaciones legacy con nuevas tecnologías como React y NodeJS. Desarrollo de queries SQL, jobs y reportes de QlikView",
+      "Modernización de aplicaciones legacy con nuevas tecnologías como React y NodeJS. Desarrollo de queries SQL, Jobs y reportes con QlikView",
     startTime: "2017",
     endTime: "2019",
   },
@@ -31,7 +32,9 @@ const experience: WorkItemProps[] = [
 export const WorkExperience = () => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
-      <Heading fontSize={"24px"}>Work Experience</Heading>
+      <Heading size={{ base: "md", md: "lg", lg: "lg" }}>
+        Work Experience
+      </Heading>
       <Box
         marginTop={"1.25rem"}
         display={"flex"}

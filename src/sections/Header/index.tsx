@@ -14,7 +14,9 @@ export const Header = () => {
       width={"100%"}
     >
       <Box display={"flex"} flexDirection={"column"} gap={"0.25rem"}>
-        <Heading size="lg">Juanse Calviño</Heading>
+        <Heading size={{ base: "md", md: "xl", lg: "xl" }}>
+          Juanse Calviño
+        </Heading>
         <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
           Me gusta programar, y trabajo de eso.
         </Text>
