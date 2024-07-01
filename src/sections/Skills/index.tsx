@@ -3,8 +3,10 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"}>
-      <Heading size={{ base: "md", md: "lg", lg: "lg" }}>Skills</Heading>
+    <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
+      <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>
+        Skills
+      </Heading>
       <Box display={"flex"} flexWrap={"wrap"} gap={"0.5rem"} marginTop={"1rem"}>
         <Tag colorScheme="yellow">Javascript</Tag>
         <Tag colorScheme="red">HTML</Tag>

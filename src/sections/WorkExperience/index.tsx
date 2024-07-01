@@ -31,8 +31,8 @@ const experience: WorkItemProps[] = [
 
 export const WorkExperience = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"}>
-      <Heading size={{ base: "md", md: "lg", lg: "lg" }}>
+    <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
+      <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>
         Work Experience
       </Heading>
       <Box

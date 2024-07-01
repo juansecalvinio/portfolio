@@ -13,18 +13,26 @@ export const Header = () => {
       justifyContent={"space-between"}
       width={"100%"}
     >
-      <Box display={"flex"} flexDirection={"column"} gap={"0.25rem"}>
-        <Heading size={{ base: "md", md: "xl", lg: "xl" }}>
-          Juanse Calviño
-        </Heading>
-        <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
-          Me gusta programar, y trabajo de eso.
-        </Text>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"space-between"}
+        gap={"2rem"}
+      >
+        <Box>
+          <Heading size={{ base: "md", md: "lg", lg: "lg" }}>
+            Juanse Calviño
+          </Heading>
+          <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
+            Me gusta programar, y trabajo de eso.
+          </Text>
+        </Box>
         <Box
           display={"flex"}
           flexDirection={"row"}
           gap={"0.5rem"}
           alignItems={"center"}
+          mt={"1rem"}
         >
           <Icon as={BiWorld} />
           <Link
@@ -34,9 +42,6 @@ export const Header = () => {
           >
             Mar del Plata, Argentina
           </Link>
-        </Box>
-        <Box marginTop={"1rem"}>
-          <ActionLinks />
         </Box>
       </Box>
 

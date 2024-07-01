@@ -20,25 +20,26 @@ export const WorkItem = ({ item }: Props) => {
       flexDirection={{ base: "column", md: "row", lg: "row" }}
       alignItems={"flex-start"}
       justifyContent={"space-between"}
-      gap={"0.25rem"}
+      gap={"0.5rem"}
+      mt={"1rem"}
     >
       <Box
         display={"flex"}
         flexDirection={"column"}
         alignItems={"flex-start"}
-        gap={"0.25rem"}
+        gap={"0.5rem"}
         maxW={"500px"}
       >
         <Box
           display={"flex"}
-          gap={"0.25rem"}
+          gap={"0.5rem"}
           flexDirection={{ base: "column", md: "row", lg: "row" }}
           alignItems={"flex-start"}
         >
           <Text fontWeight={"bold"} fontSize={"md"}>
             {item.company}
           </Text>
-          <Tag>{item.role}</Tag>
+          <Tag colorScheme="blue">{item.role}</Tag>
         </Box>
 
         <Text fontSize={"sm"} flexWrap={"wrap"}>
