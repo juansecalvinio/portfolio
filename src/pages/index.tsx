@@ -7,6 +7,7 @@ import { About } from "sections/About";
 import { WorkExperience } from "sections/WorkExperience";
 import { Education } from "sections/Education";
 import { Projects } from "sections/Projects";
+import { ActionLinks } from "components/ActionLinks";
 
 const MainPage: NextPage = () => {
   return (
@@ -22,8 +23,9 @@ const MainPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box display={"flex"} flexDirection={"column"} gap={"3rem"}>
+      <Box display={"flex"} flexDirection={"column"}>
         <Header />
+        <ActionLinks />
         <About />
         <WorkExperience />
         <Education />

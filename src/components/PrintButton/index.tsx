@@ -10,6 +10,8 @@ export const PrintButton = () => {
       onClick={() => window.print()}
       size={"sm"}
       ml={"0.5rem"}
+      fontSize={"20px"}
+      variant={"outline"}
     />
   );
 };

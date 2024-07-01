@@ -30,7 +30,12 @@ const links = [
 
 export const ActionLinks = () => {
   return (
-    <Box display={"flex"} alignItems={"center"} justifyContent={"flex-start"}>
+    <Box
+      display={"flex"}
+      alignItems={"flex-start"}
+      justifyContent={"flex-start"}
+      mt={{ base: "1rem", md: "0", lg: "0" }}
+    >
       <ToggleColor />
 
       {links.map((item) => (
@@ -40,6 +45,8 @@ export const ActionLinks = () => {
             icon={item.icon}
             size={"sm"}
             ml={"0.5rem"}
+            variant={"outline"}
+            fontSize={"20px"}
           />
         </Link>
       ))}
