@@ -30,6 +30,7 @@ const MainPage: NextPage = () => {
         <WorkExperience />
         <Education />
         <Skills />
+        <Projects />
       </Box>
     </Container>
   );
