@@ -34,8 +34,12 @@ export const Projects = () => {
         gap={"1rem"}
         mt={"1rem"}
       >
-        {projects.map((project) => (
-          <Card variant={"outline"} padding={0}>
+        {projects.map((project, index) => (
+          <Card
+            variant={"outline"}
+            padding={0}
+            key={`${project.title}-${index}`}
+          >
             <CardHeader p={"0.5rem"}>
               <Link
                 href={project.href}
@@ -57,8 +61,10 @@ export const Projects = () => {
               gap={"0.5rem"}
               p={"0.5rem"}
             >
-              {project.tags.map((tag) => (
-                <Tag colorScheme="yellow">{tag}</Tag>
+              {project.tags.map((tag, index) => (
+                <Tag colorScheme="yellow" key={`${tag}-${index}`}>
+                  {tag}
+                </Tag>
               ))}
             </CardFooter>
           </Card>
