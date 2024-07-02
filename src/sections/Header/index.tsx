@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Heading, Icon, Link, Text } from "@chakra-ui/react";
 import { BiWorld } from "react-icons/bi";
 import { Avatar } from "components/Avatar";
-import { ActionLinks } from "components/ActionLinks";
 
 export const Header = () => {
   return (
