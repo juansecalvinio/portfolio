@@ -17,6 +17,13 @@ const projects: Project[] = [
     href: "https://random-quotes-next.vercel.app/",
     tags: ["freeCodeCamp", "Challenges", "NextJS", "ChakraUI"],
   },
+  {
+    title: "Task Board",
+    description:
+      "Tablero kanban, para crear y administrar tareas y arrastrarlas a diferentes estados. Creado con React y ViteJS, y se utilizó Zustand para el manejo de estado de la aplicación.",
+    href: "https://task-board-opal.vercel.app/",
+    tags: ["React", "TypeScript", "ViteJS", "ChakraUI", "Zustand"],
+  },
 ];
 
 export const Projects = () => {
@@ -39,6 +46,7 @@ export const Projects = () => {
             variant={"outline"}
             padding={0}
             key={`${project.title}-${index}`}
+            width={"100%"}
           >
             <CardHeader p={"0.5rem"}>
               <Link
