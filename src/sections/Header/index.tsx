@@ -19,10 +19,10 @@ export const Header = () => {
         gap={"2rem"}
       >
         <Box>
-          <Heading size={{ base: "md", md: "lg", lg: "lg" }}>
+          <Heading fontSize={{ base: "25px", md: "28px", lg: "28px" }}>
             Juanse Calviño
           </Heading>
-          <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
+          <Text fontSize={{ base: "lg", md: "lg", lg: "lg" }}>
             Software Engineer
           </Text>
         </Box>
@@ -31,7 +31,7 @@ export const Header = () => {
           flexDirection={"row"}
           gap={"0.5rem"}
           alignItems={"center"}
-          mt={"1rem"}
+          // mt={"1rem"}
         >
           <Icon as={BiWorld} />
           <Link
