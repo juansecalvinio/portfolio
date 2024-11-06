@@ -31,7 +31,6 @@ export const Header = () => {
           flexDirection={"row"}
           gap={"0.5rem"}
           alignItems={"center"}
-          // mt={"1rem"}
         >
           <Icon as={BiWorld} />
           <Link

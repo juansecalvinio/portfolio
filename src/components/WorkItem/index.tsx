@@ -21,7 +21,6 @@ export const WorkItem = ({ item }: Props) => {
       alignItems={"flex-start"}
       justifyContent={"space-between"}
       gap={"0.5rem"}
-      mt={"1rem"}
     >
       <Box
         display={"flex"}
