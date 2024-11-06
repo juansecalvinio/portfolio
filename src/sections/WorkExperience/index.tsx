@@ -7,7 +7,7 @@ const experience: WorkItemProps[] = [
     company: "Santander Tecnología",
     role: "Software Engineer",
     description:
-      "Hoy en día estamos construyendo la mejor plataforma para tus inversiones.",
+      "Building the best platform for your investments in Argentina.",
     startTime: "2020",
     endTime: "Present",
   },
@@ -15,7 +15,7 @@ const experience: WorkItemProps[] = [
     company: "Montagne Outdoors",
     role: "Web Developer",
     description:
-      "Colaboré en la mejora del ecommerce, adopción de API de Mercado Pago para poder comprar con tarjetas. Trabajé con stack PHP, SQL y Javascript",
+      "I contributed to improving the e-commerce platform, adopting the Mercado Pago API to enable card payments. I worked with a PHP, SQL, and JavaScript stack.",
     startTime: "2019",
     endTime: "2020",
   },
@@ -23,7 +23,7 @@ const experience: WorkItemProps[] = [
     company: "Instituto Médico Alexander Fleming",
     role: "Full Stack Developer",
     description:
-      "Modernización de aplicaciones legacy con nuevas tecnologías como React y NodeJS. Desarrollo de queries SQL, Jobs y reportes con QlikView",
+      "Modernized legacy applications with new technologies like React and NodeJS. Developed SQL queries, jobs, and reports with QlikView.",
     startTime: "2017",
     endTime: "2019",
   },

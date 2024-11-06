@@ -23,7 +23,7 @@ export const Header = () => {
             Juanse Calviño
           </Heading>
           <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
-            Me gusta programar, y trabajo de eso.
+            I enjoy programming, and that's what I do for a living.
           </Text>
         </Box>
         <Box

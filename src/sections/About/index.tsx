@@ -9,12 +9,12 @@ export const About = () => {
       </Heading>
       <Box marginTop={"1rem"}>
         <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
-          Mi motivación en la tecnología va más allá del código, me atrae la
-          posibilidad de impactar a través del desarrollo. Estoy constantemente
-          buscando aprender y evolucionar, manteniéndome al día con las últimas
-          tendencias y prácticas en desarrollo de software. Mi objetivo es no
-          solo resolver problemas técnicos, sino también contribuir
-          significativamente a proyectos que marquen la diferencia.
+          My motivation in technology goes beyond the code; I'm drawn to the
+          potential for impact through development. I'm constantly seeking to
+          learn and evolve, staying up-to-date with the latest trends and best
+          practices in software development. My goal is not just to solve
+          technical problems but also to make a meaningful contribution to
+          projects that make a difference.
         </Text>
       </Box>
     </Box>
