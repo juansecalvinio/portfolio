@@ -7,7 +7,7 @@ const experience: WorkItemProps[] = [
     company: "Santander Tecnología",
     role: "Software Engineer",
     description:
-      "Building the best platform for your investments in Argentina.",
+      "I worked on many projects for the Investments area of the bank. I developed web microfrontends, mobile microapps using React Native, and Node.js APIs. I worked with different teams and external partners to build new features and improve the user experience for investment products.",
     startTime: "2020",
     endTime: "Present",
   },

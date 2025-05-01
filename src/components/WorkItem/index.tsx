@@ -38,7 +38,7 @@ export const WorkItem = ({ item }: Props) => {
           <Text fontWeight={"bold"} fontSize={"md"}>
             {item.company}
           </Text>
-          <Tag colorScheme="blue">{item.role}</Tag>
+          <Tag colorScheme="yellow">{item.role}</Tag>
         </Box>
 
         <Text fontSize={"sm"} flexWrap={"wrap"}>
