@@ -6,8 +6,9 @@ import { Skills } from "sections/Skills";
 import { About } from "sections/About";
 import { WorkExperience } from "sections/WorkExperience";
 import { Education } from "sections/Education";
-import { Projects } from "sections/Projects";
+import { ChallengesProjects } from "sections/ChallengesProjects";
 import { ActionLinks } from "components/ActionLinks";
+import { SideProjects } from "sections/SideProjects";
 
 const MainPage: NextPage = () => {
   return (
@@ -30,7 +31,8 @@ const MainPage: NextPage = () => {
         <WorkExperience />
         <Education />
         <Skills />
-        {/* <Projects /> */}
+        <SideProjects />
+        {/* <ChallengesProjects /> */}
       </Box>
     </Container>
   );

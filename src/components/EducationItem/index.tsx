@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 
 export interface EducationItemProps {
@@ -13,6 +13,8 @@ interface Props {
 }
 
 export const EducationItem = ({ item }: Props) => {
+  const borderColor = useColorModeValue("gray.200", "gray.600");
+
   return (
     <Box
       display={"flex"}
@@ -20,6 +22,9 @@ export const EducationItem = ({ item }: Props) => {
       alignItems={"flex-start"}
       justifyContent={"space-between"}
       gap={"0.25rem"}
+      borderTop={`1px solid`}
+      borderColor={borderColor}
+      paddingY={"1rem"}
     >
       <Box
         display={"flex"}

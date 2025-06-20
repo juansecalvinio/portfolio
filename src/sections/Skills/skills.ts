@@ -12,6 +12,10 @@ export const skills: { colorScheme: string; skill: string }[] = [
     skill: "React",
   },
   {
+    colorScheme: "blue",
+    skill: "React Native",
+  },
+  {
     colorScheme: "gray",
     skill: "Next",
   },
@@ -21,22 +25,18 @@ export const skills: { colorScheme: string; skill: string }[] = [
   },
   {
     colorScheme: "red",
-    skill: "NestJS",
+    skill: "Nest",
   },
   {
     colorScheme: "blue",
     skill: "Go",
   },
   {
-    colorScheme: "blue",
+    colorScheme: "purple",
     skill: "PostgreSQL",
   },
   {
     colorScheme: "green",
     skill: "MongoDB",
-  },
-  {
-    colorScheme: "gray",
-    skill: "Git",
   },
 ];
