@@ -32,7 +32,7 @@ const MainPage: NextPage = () => {
         <Education />
         <Skills />
         <SideProjects />
-        {/* <ChallengesProjects /> */}
+        <ChallengesProjects />
       </Box>
     </Container>
   );

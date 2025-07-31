@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, StyleFunctionProps } from "@chakra-ui/react";
 import { Inter, JetBrains_Mono } from "next/font/google";
 
 const inter = Inter({
@@ -21,7 +21,14 @@ const config = {
     jetBrainsMono: `${jetBrainsMono.style.fontFamily}, sans-serif`,
   },
 };
+const styles = {
+  global: (props: StyleFunctionProps) => ({
+    body: {
+      // bg: props.colorMode === "dark" ? "black" : "white",
+    },
+  }),
+};
 
-const theme = extendTheme({ config });
+const theme = extendTheme({ config, styles });
 
 export default theme;
