@@ -9,18 +9,6 @@ const education: EducationItemProps[] = [
     startTime: "2011",
     endTime: "2017",
   },
-  {
-    place: "Acámica",
-    career: "Desarrollador Web Full Stack",
-    startTime: "2018",
-    endTime: "2019",
-  },
-  {
-    place: "Acámica",
-    career: "Desarrollador Front End React",
-    startTime: "2019",
-    endTime: "2020",
-  },
 ];
 
 export const Education = () => {
