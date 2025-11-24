@@ -9,21 +9,21 @@ export const challengesProjects: Project[] = [
   {
     title: "Saas Landing Page",
     description:
-      "Challenge de freeCodeCamp desarrollado con NextJS para mostrar frases al azar. También se puede ver su versión VanillaJS",
+      "Landing page for a SaaS product, created with TailwindCSS and NextJS.",
     href: "https://saas-landing-page-mocha-pi.vercel.app/",
     tags: ["TailwindCSS", "NextJS"],
   },
   {
     title: "Google Auth with Golang",
     description:
-      "Pequeño proyecto de autenticación con Google utilizando Golang en el backend y React en el frontend.",
+      "A little project for Google authentication using Golang in the backend and React in the frontend.",
     href: "https://go-auth-google-react.vercel.app/",
     tags: ["Go", "React"],
   },
   {
     title: "Task Board",
     description:
-      "Tablero kanban, para crear y administrar tareas y moverlas a diferentes estados.",
+      "Kanban board for creating and managing tasks and moving them to different states, created with React.",
     href: "https://task-board-opal.vercel.app/",
     tags: ["React"],
   },
