@@ -2,6 +2,7 @@ import React from "react";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 import theme from "theme";
 
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           transition={{ duration: 2 }}
         >
           <Component {...pageProps} />
+          <Analytics />
         </motion.div>
       </AnimatePresence>
     </ChakraProvider>
