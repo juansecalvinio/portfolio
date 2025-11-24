@@ -19,7 +19,7 @@ export const ChallengesProjects = () => {
         mt={"1rem"}
       >
         {challengesProjects.map((project, index) => (
-          <ProjectCard id={index} project={project} />
+          <ProjectCard key={index} id={index} project={project} />
         ))}
       </Box>
     </Box>
