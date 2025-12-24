@@ -1,4 +1,6 @@
-export const skills: { colorScheme: string; skill: string }[] = [
+import { Skill } from "models/Skill";
+
+export const skills: Skill[] = [
   {
     colorScheme: "yellow",
     skill: "JS",
@@ -24,10 +26,6 @@ export const skills: { colorScheme: string; skill: string }[] = [
     skill: "Node",
   },
   {
-    colorScheme: "red",
-    skill: "Nest",
-  },
-  {
     colorScheme: "blue",
     skill: "Go",
   },
@@ -38,5 +36,13 @@ export const skills: { colorScheme: string; skill: string }[] = [
   {
     colorScheme: "green",
     skill: "MongoDB",
+  },
+  {
+    colorScheme: "blue",
+    skill: "Docker",
+  },
+  {
+    colorScheme: "gray",
+    skill: "AWS",
   },
 ];

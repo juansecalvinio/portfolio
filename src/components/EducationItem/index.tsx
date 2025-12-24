@@ -1,18 +1,12 @@
 import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import { Education } from "models/Education";
 import React from "react";
 
-export interface EducationItemProps {
-  place: string;
-  career: string;
-  startTime: string;
-  endTime: string;
-}
-
 interface Props {
-  item: EducationItemProps;
+  education: Education;
 }
 
-export const EducationItem = ({ item }: Props) => {
+export const EducationItem = ({ education }: Props) => {
   const borderColor = useColorModeValue("gray.200", "gray.600");
 
   return (
@@ -33,15 +27,15 @@ export const EducationItem = ({ item }: Props) => {
         gap={"0.25rem"}
       >
         <Text fontWeight={"bold"} fontSize={"md"}>
-          {item.place}
+          {education.place}
         </Text>
-        <Text fontSize={"sm"}>{item.career}</Text>
+        <Text fontSize={"sm"}>{education.career}</Text>
       </Box>
       <Box>
         <Text
           fontSize={"sm"}
           fontWeight={"600"}
-        >{`${item.startTime} - ${item.endTime}`}</Text>
+        >{`${education.startTime} - ${education.endTime}`}</Text>
       </Box>
     </Box>
   );

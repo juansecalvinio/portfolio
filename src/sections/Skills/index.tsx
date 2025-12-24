@@ -1,8 +1,12 @@
 import React from "react";
 import { Box, Heading, Tag } from "@chakra-ui/react";
-import { skills } from "./skills";
+import { Skill } from "models/Skill";
 
-export const Skills = () => {
+interface Props {
+  skills: Skill[];
+}
+
+export const Skills = ({ skills }: Props) => {
   return (
     <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
       <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>

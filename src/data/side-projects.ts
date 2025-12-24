@@ -1,15 +1,10 @@
-export interface Project {
-  title: string;
-  description: string;
-  href: string;
-  tags: string[];
-}
+import { Project } from "models/Project";
 
 export const sideProjects: Project[] = [
   {
     title: "Aguila Turismo",
     description:
-      "Landing page para agencia de turismo, desarrollado con NextJS y tailwind-css.",
+      "Landing page for a tourism agency, built with NextJS and tailwind-css.",
     href: "https://www.aguilaturismoarg.com/",
     tags: ["TypeScript", "Next", "Tailwind"],
   },

@@ -10,7 +10,7 @@ import {
   IconButton,
   Box,
 } from "@chakra-ui/react";
-import { Project } from "sections/ChallengesProjects/challenges-projects";
+import { Project } from "data/challenges-projects";
 import { FaGithub } from "react-icons/fa6";
 
 interface Props {

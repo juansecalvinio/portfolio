@@ -9,12 +9,9 @@ export const About = () => {
       </Heading>
       <Box marginTop={"1rem"}>
         <Text fontSize={{ base: "sm", md: "md", lg: "md" }}>
-          My motivation in technology goes beyond the code; I'm drawn to the
-          potential for impact through development. I'm constantly seeking to
-          learn and evolve, staying up-to-date with the latest trends and best
-          practices in software development. My goal is not just to solve
-          technical problems but also to make a meaningful contribution to
-          projects that make a difference.
+          Software Engineer from Buenos Aires, Argentina, specializing in React,
+          TypeScript, and Node.js. Focused on writing clean, maintainable code
+          and staying current with the latest development technologies.
         </Text>
       </Box>
     </Box>

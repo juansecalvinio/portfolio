@@ -1,15 +1,7 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import { EducationItem, EducationItemProps } from "components/EducationItem";
-
-const education: EducationItemProps[] = [
-  {
-    place: "Universidad Tecnológica Nacional",
-    career: "Técnico Superior en Programación",
-    startTime: "2011",
-    endTime: "2017",
-  },
-];
+import { EducationItem } from "components/EducationItem";
+import { educations } from "data/educations";
 
 export const Education = () => {
   return (
@@ -23,8 +15,11 @@ export const Education = () => {
         flexDirection={"column"}
         gap="0.75rem"
       >
-        {education.map((item) => (
-          <EducationItem key={`${item.place}-${item.career}`} item={item} />
+        {educations.map((education) => (
+          <EducationItem
+            key={`${education.place}-${education.career}`}
+            education={education}
+          />
         ))}
       </Box>
     </Box>
