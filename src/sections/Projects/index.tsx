@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import { ProjectCard } from "components/ProjectCard";
-import { Project } from "../../data/side-projects";
+import { Project } from "models/Project";
 
 interface Props {
   title: string;
