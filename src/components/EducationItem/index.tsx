@@ -1,4 +1,4 @@
-import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { Education } from "models/Education";
 import React from "react";
 
@@ -7,35 +7,40 @@ interface Props {
 }
 
 export const EducationItem = ({ education }: Props) => {
-  const borderColor = useColorModeValue("gray.200", "gray.600");
-
   return (
     <Box
-      display={"flex"}
-      flexDirection={{ base: "column", md: "row", lg: "row" }}
-      alignItems={"flex-start"}
-      justifyContent={"space-between"}
-      gap={"0.25rem"}
-      borderTop={`1px solid`}
-      borderColor={borderColor}
-      paddingY={"1rem"}
+      display="flex"
+      flexDirection={{ base: "column", md: "row" }}
+      alignItems="flex-start"
+      justifyContent="space-between"
+      gap={1}
+      borderTop="1px solid"
+      borderColor="border.subtle"
+      paddingY={4}
     >
       <Box
-        display={"flex"}
-        flexDirection={"column"}
-        alignItems={"flex-start"}
-        gap={"0.25rem"}
+        display="flex"
+        flexDirection="column"
+        alignItems="flex-start"
+        gap={1}
+        minW={0}
       >
-        <Text fontWeight={"bold"} fontSize={"md"}>
+        <Text fontWeight="bold" fontSize="md">
           {education.place}
         </Text>
-        <Text fontSize={"sm"}>{education.career}</Text>
+        <Text fontSize="sm" color="text.secondary">
+          {education.career}
+        </Text>
       </Box>
-      <Box>
+      <Box flexShrink={0}>
         <Text
-          fontSize={"sm"}
-          fontWeight={"600"}
-        >{`${education.startTime} - ${education.endTime}`}</Text>
+          fontFamily="mono"
+          fontSize="sm"
+          color="text.muted"
+          sx={{ fontVariantNumeric: "tabular-nums" }}
+        >
+          {`${education.startTime} - ${education.endTime}`}
+        </Text>
       </Box>
     </Box>
   );

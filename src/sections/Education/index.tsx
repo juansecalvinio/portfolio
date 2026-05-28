@@ -5,16 +5,9 @@ import { educations } from "data/educations";
 
 export const Education = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
-      <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>
-        Education
-      </Heading>
-      <Box
-        marginTop={"1.25rem"}
-        display={"flex"}
-        flexDirection={"column"}
-        gap="0.75rem"
-      >
+    <Box as="section" display="flex" flexDirection="column" mt={8}>
+      <Heading fontSize={{ base: "xl", md: "2xl" }}>Education</Heading>
+      <Box mt={5} display="flex" flexDirection="column" gap={3}>
         {educations.map((education) => (
           <EducationItem
             key={`${education.place}-${education.career}`}

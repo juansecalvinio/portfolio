@@ -10,21 +10,19 @@ interface Props {
 
 export const Projects = ({ title, projects }: Props) => {
   return (
-    <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
-      <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>
-        {title}
-      </Heading>
+    <Box as="section" display="flex" flexDirection="column" mt={8}>
+      <Heading fontSize={{ base: "xl", md: "2xl" }}>{title}</Heading>
       <Box
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"flex-start"}
-        flexDirection={"row"}
-        flexWrap={"wrap"}
-        gap={"1rem"}
-        mt={"1rem"}
+        display="flex"
+        alignItems="stretch"
+        justifyContent="flex-start"
+        flexDirection="row"
+        flexWrap="wrap"
+        gap={4}
+        mt={4}
       >
-        {projects.map((project, index) => (
-          <ProjectCard key={index} id={index} project={project} />
+        {projects.map((project) => (
+          <ProjectCard key={project.href} project={project} />
         ))}
       </Box>
     </Box>
