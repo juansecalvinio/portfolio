@@ -14,69 +14,71 @@ import { FaGithub } from "react-icons/fa6";
 import { Project } from "models/Project";
 
 interface Props {
-  id: number;
   project: Project;
 }
 
-export const ProjectCard = ({ id, project }: Props) => {
+export const ProjectCard = ({ project }: Props) => {
   return (
     <Card
-      variant={"outline"}
-      padding={0}
-      key={`${project.title}-${id}`}
-      width={"100%"}
-      p={"0.5rem"}
+      variant="outline"
+      borderColor="border.subtle"
+      width="100%"
+      p={2}
     >
-      <CardHeader p={"0.5rem"}>
+      <CardHeader p={2}>
         <Link
           href={project.href}
-          fontSize={"16px"}
-          fontWeight={"bold"}
+          fontSize="md"
+          fontWeight="bold"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {project.title}
         </Link>
       </CardHeader>
-      <CardBody p={"0.5rem"}>
-        <Text fontSize={"14px"}>{project.description}</Text>
+      <CardBody p={2}>
+        <Text fontSize="sm" color="text.secondary">
+          {project.description}
+        </Text>
       </CardBody>
       <CardFooter
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"space-between"}
-        flexWrap={"wrap"}
-        gap={"0.5rem"}
-        p={"0.5rem"}
+        display="flex"
+        alignItems="center"
+        justifyContent="space-between"
+        flexWrap="wrap"
+        gap={2}
+        p={2}
       >
         <Box
-          display={"flex"}
-          alignItems={"center"}
-          justifyContent={"flex-start"}
-          flexWrap={"wrap"}
-          gap={"0.5rem"}
+          display="flex"
+          alignItems="center"
+          justifyContent="flex-start"
+          flexWrap="wrap"
+          gap={2}
         >
           {project.tags.map((tag, index) => (
-            <Tag colorScheme="gray" key={`${tag}-${index}`}>
+            <Tag
+              colorScheme="gray"
+              fontFamily="mono"
+              key={`${tag}-${index}`}
+            >
               {tag}
             </Tag>
           ))}
         </Box>
 
         {project.repositoryUrl && (
-          <Link
-            key={project.title}
+          <IconButton
+            as="a"
             href={project.repositoryUrl}
             target="_blank"
-          >
-            <IconButton
-              aria-label={"github"}
-              icon={<FaGithub />}
-              size={"xs"}
-              ml={"0.5rem"}
-              variant={"outline"}
-              fontSize={"20px"}
-            />
-          </Link>
+            rel="noopener noreferrer"
+            aria-label={`View ${project.title} repository on GitHub`}
+            icon={<FaGithub />}
+            size="xs"
+            variant="outline"
+            fontSize="20px"
+          />
         )}
       </CardFooter>
     </Card>

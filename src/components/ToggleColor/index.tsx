@@ -4,13 +4,16 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export const ToggleColor = () => {
   const { toggleColorMode } = useColorMode();
+  const label = useColorModeValue("Switch to dark mode", "Switch to light mode");
+  const icon = useColorModeValue(<MoonIcon />, <SunIcon />);
+
   return (
     <IconButton
       onClick={toggleColorMode}
-      aria-label={useColorModeValue("Modo oscuro", "Modo claro")}
-      icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-      size={"sm"}
-      variant={"outline"}
+      aria-label={label}
+      icon={icon}
+      size="sm"
+      variant="outline"
     />
   );
 };

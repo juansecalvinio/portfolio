@@ -8,13 +8,11 @@ interface Props {
 
 export const Skills = ({ skills }: Props) => {
   return (
-    <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
-      <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>
-        Skills
-      </Heading>
-      <Box display={"flex"} flexWrap={"wrap"} gap={"0.5rem"} marginTop={"1rem"}>
+    <Box as="section" display="flex" flexDirection="column" mt={8}>
+      <Heading fontSize={{ base: "xl", md: "2xl" }}>Skills</Heading>
+      <Box display="flex" flexWrap="wrap" gap={2} mt={4}>
         {skills.map((skill) => (
-          <Tag key={skill.skill} colorScheme={skill.colorScheme}>
+          <Tag key={skill.skill} colorScheme={skill.colorScheme} fontFamily="mono">
             {skill.skill}
           </Tag>
         ))}

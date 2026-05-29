@@ -31,16 +31,9 @@ const experience: WorkItemProps[] = [
 
 export const WorkExperience = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"} mt={"2rem"}>
-      <Heading fontSize={{ base: "20px", md: "25px", lg: "25px" }}>
-        Work Experience
-      </Heading>
-      <Box
-        marginTop={"1.25rem"}
-        display={"flex"}
-        flexDirection={"column"}
-        gap="0.75rem"
-      >
+    <Box as="section" display="flex" flexDirection="column" mt={8}>
+      <Heading fontSize={{ base: "xl", md: "2xl" }}>Work Experience</Heading>
+      <Box mt={5} display="flex" flexDirection="column" gap={3}>
         {experience.map((item) => (
           <WorkItem key={`${item.company}-${item.role}`} item={item} />
         ))}

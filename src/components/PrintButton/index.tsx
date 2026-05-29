@@ -5,13 +5,12 @@ import { PiPrinterLight } from "react-icons/pi";
 export const PrintButton = () => {
   return (
     <IconButton
-      aria-label={"print"}
+      aria-label="Print this page"
       icon={<PiPrinterLight />}
       onClick={() => window.print()}
-      size={"sm"}
-      ml={"0.5rem"}
-      fontSize={"20px"}
-      variant={"outline"}
+      size="sm"
+      fontSize="20px"
+      variant="outline"
     />
   );
 };
