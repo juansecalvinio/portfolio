@@ -11,6 +11,7 @@ import { ActionLinks } from "components/ActionLinks";
 import { sideProjects } from "data/side-projects";
 import { challengesProjects } from "data/challenges-projects";
 import { skills } from "data/skills";
+import { works } from "../data/works";
 
 const TITLE = "Juanse Calviño | Software Engineer";
 const DESCRIPTION =
@@ -64,8 +65,9 @@ const MainPage: NextPage = () => {
         <WorkExperience />
         <Education />
         <Skills skills={skills} />
-        {/* <Projects title="Freelance Works" projects={sideProjects} />
-        <Projects title="Side Projects / Demos" projects={challengesProjects} /> */}
+        <Projects title="Side Projects" projects={sideProjects} />
+        <Projects title="Freelance Works" projects={works} />
+        {/* <Projects title="Challeges / Demos" projects={challengesProjects} /> */}
       </Box>
     </Container>
   );
