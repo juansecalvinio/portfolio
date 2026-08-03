@@ -1,11 +1,11 @@
-import { Project } from "models/Project";
+import { Project } from "../models/Project";
 
 export const sideProjects: Project[] = [
   {
-    title: "Aguila Turismo",
+    title: "tepidolacuenta",
     description:
-      "Landing page for a tourism agency, built with NextJS and tailwind-css.",
-    href: "https://www.aguilaturismoarg.com/",
-    tags: ["TypeScript", "Next", "Tailwind"],
+      "Web app that lets diners request their bill from their phone, built with React and Go.",
+    href: "https://www.tepidolacuenta.site/",
+    tags: ["React", "Go"],
   },
 ];
