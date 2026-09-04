@@ -19,16 +19,12 @@ interface Props {
 
 export const ProjectCard = ({ project }: Props) => {
   return (
-    <Card
-      variant="outline"
-      borderColor="border.subtle"
-      width="100%"
-      p={2}
-    >
+    <Card variant="outline" borderColor="border.subtle" width="100%" p={2}>
       <CardHeader p={2}>
         <Link
           href={project.href}
-          fontSize="md"
+          fontSize="large"
+          fontFamily="mono"
           fontWeight="bold"
           target="_blank"
           rel="noopener noreferrer"
@@ -57,11 +53,7 @@ export const ProjectCard = ({ project }: Props) => {
           gap={2}
         >
           {project.tags.map((tag, index) => (
-            <Tag
-              colorScheme="gray"
-              fontFamily="mono"
-              key={`${tag}-${index}`}
-            >
+            <Tag colorScheme="gray" fontFamily="mono" key={`${tag}-${index}`}>
               {tag}
             </Tag>
           ))}
