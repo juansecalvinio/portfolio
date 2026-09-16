@@ -2,6 +2,7 @@ import { Project } from "../models/Project";
 
 export const works: Project[] = [
   {
+    kind: "freelance",
     title: "Aguila Turismo",
     description:
       "Landing page for a tourism agency, built with NextJS and tailwind-css.",

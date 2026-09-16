@@ -2,6 +2,7 @@ import { Project } from "models/Project";
 
 export const challengesProjects: Project[] = [
   {
+    kind: "challenge",
     title: "Saas Landing Page",
     description:
       "Landing page for a SaaS product, built with TailwindCSS and NextJS.",
@@ -10,6 +11,7 @@ export const challengesProjects: Project[] = [
     tags: ["TailwindCSS", "NextJS"],
   },
   {
+    kind: "challenge",
     title: "Google Auth with Golang",
     description:
       "A little project for Google authentication using Golang in the backend and React in the frontend.",
@@ -18,6 +20,7 @@ export const challengesProjects: Project[] = [
     tags: ["Go", "React"],
   },
   {
+    kind: "challenge",
     title: "Task Board",
     description:
       "Kanban board for creating and managing tasks and moving them to different states, built with React.",

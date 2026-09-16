@@ -64,10 +64,9 @@ const MainPage: NextPage = () => {
         <About />
         <WorkExperience />
         <Education />
+        <Projects projects={[...sideProjects, ...works]} />
+        {/* <Projects projects={challengesProjects} /> */}
         <Skills skills={skills} />
-        <Projects title="Side Projects" projects={sideProjects} />
-        <Projects title="Freelance Works" projects={works} />
-        {/* <Projects title="Challeges / Demos" projects={challengesProjects} /> */}
       </Box>
     </Container>
   );

@@ -5,6 +5,7 @@ import { Global, css } from "@emotion/react";
 import { Analytics } from "@vercel/analytics/react";
 
 import theme from "theme";
+import { AuroraBackground } from "components/AuroraBackground";
 
 const pageFade = css`
   @keyframes pageFadeIn {
@@ -25,12 +26,26 @@ const pageFade = css`
       animation: none;
     }
   }
+
+  /* Dark theme is screen-only. Printing flips everything back to
+     black-on-white so the CV doesn't waste ink or read poorly on paper. */
+  @media print {
+    html {
+      filter: invert(1);
+    }
+
+    img,
+    video {
+      filter: invert(1);
+    }
+  }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Global styles={pageFade} />
+      <AuroraBackground />
       <div className="page-fade">
         <Component {...pageProps} />
         <Analytics />

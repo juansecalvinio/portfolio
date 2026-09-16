@@ -1,28 +1,19 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import { ProjectCard } from "components/ProjectCard";
+import { ProjectItem } from "components/ProjectItem";
 import { Project } from "models/Project";
 
 interface Props {
-  title: string;
   projects: Project[];
 }
 
-export const Projects = ({ title, projects }: Props) => {
+export const Projects = ({ projects }: Props) => {
   return (
     <Box as="section" display="flex" flexDirection="column" mt={8}>
-      <Heading fontSize={{ base: "xl", md: "2xl" }}>{title}</Heading>
-      <Box
-        display="flex"
-        alignItems="stretch"
-        justifyContent="flex-start"
-        flexDirection="row"
-        flexWrap="wrap"
-        gap={4}
-        mt={4}
-      >
+      <Heading fontSize={{ base: "xl", md: "2xl" }}>Projects</Heading>
+      <Box mt={5} display="flex" flexDirection="column" gap={3}>
         {projects.map((project) => (
-          <ProjectCard key={project.href} project={project} />
+          <ProjectItem key={project.href} project={project} />
         ))}
       </Box>
     </Box>

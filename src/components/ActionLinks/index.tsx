@@ -2,8 +2,7 @@ import React from "react";
 import { Box, IconButton } from "@chakra-ui/react";
 import { CiMail } from "react-icons/ci";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { ToggleColor } from "components/ToggleColor";
-import { PrintButton } from "components/PrintButton";
+import { DownloadCvButton } from "components/DownloadCvButton";
 
 const links = [
   {
@@ -37,8 +36,6 @@ export const ActionLinks = () => {
       gap={2}
       mt={{ base: 4, md: 6 }}
     >
-      <ToggleColor />
-
       {links.map((item) => (
         <IconButton
           key={item.name}
@@ -54,7 +51,7 @@ export const ActionLinks = () => {
         />
       ))}
 
-      <PrintButton />
+      <DownloadCvButton />
     </Box>
   );
 };
