@@ -1,8 +1,14 @@
-import { extendTheme, ThemeConfig, StyleFunctionProps } from "@chakra-ui/react";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { extendTheme, ThemeConfig } from "@chakra-ui/react";
+import { Space_Grotesk, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 
-const inter = Inter({
-  weight: ["400", "500", "600", "700"],
+const spaceGrotesk = Space_Grotesk({
+  weight: ["500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const ibmPlexSans = IBM_Plex_Sans({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -14,34 +20,33 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 const config: ThemeConfig = {
-  initialColorMode: "light",
+  initialColorMode: "dark",
   useSystemColorMode: false,
 };
 
 const fonts = {
-  heading: `${inter.style.fontFamily}, sans-serif`,
-  body: `${inter.style.fontFamily}, sans-serif`,
+  heading: `${spaceGrotesk.style.fontFamily}, sans-serif`,
+  body: `${ibmPlexSans.style.fontFamily}, sans-serif`,
   // Signature: monospace reserved for data only (dates, tags, location).
   mono: `${jetBrainsMono.style.fontFamily}, monospace`,
 };
 
-// Token architecture: a small set of primitives. Same hue, shift only lightness.
-// Borders-only depth strategy — no decorative shadows.
+// Monochrome, single fixed dark theme — no hue, only lightness steps.
 const semanticTokens = {
   colors: {
-    "text.primary": { default: "gray.800", _dark: "gray.100" },
-    "text.secondary": { default: "gray.600", _dark: "gray.400" },
-    "text.muted": { default: "gray.500", _dark: "gray.500" },
-    "border.subtle": { default: "blackAlpha.200", _dark: "whiteAlpha.200" },
-    "border.emphasis": { default: "blackAlpha.300", _dark: "whiteAlpha.300" },
-    "surface.canvas": { default: "white", _dark: "gray.900" },
-    accent: { default: "teal.600", _dark: "teal.300" },
-    "accent.hover": { default: "teal.700", _dark: "teal.200" },
+    "text.primary": { default: "gray.100" },
+    "text.secondary": { default: "gray.400" },
+    "text.muted": { default: "gray.500" },
+    "text.link": { default: "gray.300" },
+    "text.link.hover": { default: "white" },
+    "border.subtle": { default: "whiteAlpha.200" },
+    "border.emphasis": { default: "whiteAlpha.300" },
+    "surface.canvas": { default: "#09090b" },
   },
 };
 
 const styles = {
-  global: (props: StyleFunctionProps) => ({
+  global: {
     html: {
       scrollBehavior: "smooth",
     },
@@ -50,9 +55,9 @@ const styles = {
       color: "text.primary",
     },
     "*::selection": {
-      bg: props.colorMode === "dark" ? "teal.700" : "teal.100",
+      bg: "whiteAlpha.300",
     },
-  }),
+  },
 };
 
 const components = {
@@ -65,10 +70,12 @@ const components = {
   },
   Link: {
     baseStyle: {
-      color: "accent",
+      color: "text.link",
+      textDecoration: "underline",
+      textUnderlineOffset: "2px",
       transitionProperty: "color",
       transitionDuration: "150ms",
-      _hover: { color: "accent.hover", textDecoration: "underline" },
+      _hover: { color: "text.link.hover" },
     },
   },
 };

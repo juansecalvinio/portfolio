@@ -7,16 +7,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <meta
-            name="theme-color"
-            content="#ffffff"
-            media="(prefers-color-scheme: light)"
-          />
-          <meta
-            name="theme-color"
-            content="#171923"
-            media="(prefers-color-scheme: dark)"
-          />
+          <meta name="theme-color" content="#09090b" />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
